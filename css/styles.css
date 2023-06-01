@@ -1,0 +1,41 @@
+body {
+  background: rgb(0, 0, 0);
+}
+
+.content {
+  padding: 200px;
+  border: 5px solid #a50e0e;
+}
+
+.content:hover .content-circle {
+  animation-play-state: paused;
+}
+
+.content-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+
+  animation-name: white-circle;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    left: 500px;
+  }
+}
