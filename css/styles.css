@@ -2,8 +2,15 @@ body {
   background: rgb(0, 0, 0);
 }
 
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .content {
-  padding: 200px;
+  padding: 100px;
   border: 5px solid #a50e0e;
 }
 
@@ -12,18 +19,21 @@ body {
 }
 
 .content-circle {
-  width: 100px;
-  height: 100px;
-  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: #ee0404;
   border-radius: 50%;
   position: relative;
   left: 0;
 
   animation-name: white-circle;
   animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction: alternate-reverse;
   animation-delay: 3s;
   animation-fill-mode: backwards;
 }
@@ -33,9 +43,9 @@ body {
     left: 0;
   }
   50% {
-    border-radius: 0;
+    border-radius: 0%;
   }
   100% {
-    left: 500px;
+    left: 780px;
   }
 }
