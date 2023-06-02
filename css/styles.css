@@ -33,7 +33,7 @@ body {
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation-direction: galternate-reverse;
   animation-delay: 3s;
   animation-fill-mode: backwards;
 }
